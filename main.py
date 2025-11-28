@@ -10,8 +10,8 @@ import configparser
 config = configparser.ConfigParser()
 config.read("settings.ini")
 api_id = config["Tg"]["api_id"]
-api_hash = config["Tg"]["api_hash"].replace('"', '')
-city = config["Tg"]["city"].replace('"', '')
+api_hash = config["Tg"]["api_hash"]
+city = config["Tg"]["city"]
 url_yandex = f"https://yandex.ru/pogoda/ru/{city.lower()}"
 url_mail = f"https://pogoda.mail.ru/prognoz/{city.lower()}/24hours/"
 FONT_LARGE = ImageFont.truetype("FranksRus-Regular_0.otf", 70)
